@@ -268,11 +268,11 @@ export default [
     },
     {
         titles: [dede, kiz],
-        result: [baba, amca, hala]
+        result: hala
     },
     {
         titles: [dede, ogul],
-        result: [baba, amca, hala]
+        result: [baba, amca]
     },
     {
         titles: [erkekKardes, ogul],

@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="toolbar">
-      <div class="logo">akrabax
+      <div class="logo">
+        akrabax
         <span class="beta">çok beta</span>
       </div>
     </div>
@@ -106,6 +107,7 @@ export default {
     titleFilter() {
       const last = this.getTitle(this.seq[this.seq.length - 1]);
       return this.titles.filter((x) => {
+        if (x.id === 30) return false;
         if (!x.only || last.gender === x.only || last.gender === 'x')
           return true;
         return false;
@@ -246,7 +248,7 @@ export default {
   border: 0 !important;
   outline: 0;
 }
-.beta{
+.beta {
   font-size: 12px;
 }
 </style>
